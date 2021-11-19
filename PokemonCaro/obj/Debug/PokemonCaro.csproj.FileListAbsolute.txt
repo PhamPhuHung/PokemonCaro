@@ -1,0 +1,28 @@
+\\172.16.16.7\mm_automation\Auto TE Team\06_Share folder\49_PhuHung\C#\Chat With Socket\ChatWithSocket\obj\Debug\PokemonCaro.csprojAssemblyReference.cache
+\\172.16.16.7\mm_automation\Auto TE Team\06_Share folder\49_PhuHung\C#\Chat With Socket\ChatWithSocket\obj\Debug\Interop.WMPLib.dll
+\\172.16.16.7\mm_automation\Auto TE Team\06_Share folder\49_PhuHung\C#\Chat With Socket\ChatWithSocket\obj\Debug\AxInterop.WMPLib.dll
+\\172.16.16.7\mm_automation\Auto TE Team\06_Share folder\49_PhuHung\C#\Chat With Socket\ChatWithSocket\obj\Debug\PokemonCaro.csproj.ResolveComReference.cache
+\\172.16.16.7\mm_automation\Auto TE Team\06_Share folder\49_PhuHung\C#\Chat With Socket\ChatWithSocket\obj\Debug\ChatWithSocket.exe
+\\172.16.16.7\mm_automation\Auto TE Team\06_Share folder\49_PhuHung\C#\Chat With Socket\ChatWithSocket\obj\Debug\ChatWithSocket.pdb
+C:\Users\Phuhu\OneDrive\Máy tính\PokemonCaro\PokemonCaro\bin\Debug\PokemonCaro.exe.config
+C:\Users\Phuhu\OneDrive\Máy tính\PokemonCaro\PokemonCaro\bin\Debug\PokemonCaro.exe
+C:\Users\Phuhu\OneDrive\Máy tính\PokemonCaro\PokemonCaro\bin\Debug\PokemonCaro.pdb
+C:\Users\Phuhu\OneDrive\Máy tính\PokemonCaro\PokemonCaro\bin\Debug\EPPlus.dll
+C:\Users\Phuhu\OneDrive\Máy tính\PokemonCaro\PokemonCaro\bin\Debug\EPPlus.xml
+C:\Users\Phuhu\OneDrive\Máy tính\PokemonCaro\PokemonCaro\bin\Debug\Interop.WMPLib.dll
+C:\Users\Phuhu\OneDrive\Máy tính\PokemonCaro\PokemonCaro\bin\Debug\AxInterop.WMPLib.dll
+C:\Users\Phuhu\OneDrive\Máy tính\PokemonCaro\PokemonCaro\obj\Debug\Interop.WMPLib.dll
+C:\Users\Phuhu\OneDrive\Máy tính\PokemonCaro\PokemonCaro\obj\Debug\AxInterop.WMPLib.dll
+C:\Users\Phuhu\OneDrive\Máy tính\PokemonCaro\PokemonCaro\obj\Debug\PokemonCaro.csproj.ResolveComReference.cache
+C:\Users\Phuhu\OneDrive\Máy tính\PokemonCaro\PokemonCaro\obj\Debug\PokemonCaro.CreateNewAccount.resources
+C:\Users\Phuhu\OneDrive\Máy tính\PokemonCaro\PokemonCaro\obj\Debug\PokemonCaro.LogIn.resources
+C:\Users\Phuhu\OneDrive\Máy tính\PokemonCaro\PokemonCaro\obj\Debug\PokemonCaro.MainScreen.resources
+C:\Users\Phuhu\OneDrive\Máy tính\PokemonCaro\PokemonCaro\obj\Debug\PokemonCaro.PlayGame.resources
+C:\Users\Phuhu\OneDrive\Máy tính\PokemonCaro\PokemonCaro\obj\Debug\PokemonCaro.PokemonCollection.resources
+C:\Users\Phuhu\OneDrive\Máy tính\PokemonCaro\PokemonCaro\obj\Debug\PokemonCaro.Properties.Resources.resources
+C:\Users\Phuhu\OneDrive\Máy tính\PokemonCaro\PokemonCaro\obj\Debug\PokemonCaro.csproj.GenerateResource.cache
+C:\Users\Phuhu\OneDrive\Máy tính\PokemonCaro\PokemonCaro\obj\Debug\PokemonCaro.csproj.CoreCompileInputs.cache
+C:\Users\Phuhu\OneDrive\Máy tính\PokemonCaro\PokemonCaro\obj\Debug\PokemonCaro.csproj.CopyComplete
+C:\Users\Phuhu\OneDrive\Máy tính\PokemonCaro\PokemonCaro\obj\Debug\PokemonCaro.exe
+C:\Users\Phuhu\OneDrive\Máy tính\PokemonCaro\PokemonCaro\obj\Debug\PokemonCaro.pdb
+C:\Users\Phuhu\OneDrive\Máy tính\PokemonCaro\PokemonCaro\obj\Debug\PokemonCaro.Result.resources

@@ -1,0 +1,104 @@
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Text;
+using System.Windows.Forms;
+
+namespace CaroDL
+{
+    public partial class main : Form
+    {
+        private bool _is_moving;
+        private Point PointClicked;
+        private VanCo vanco;
+
+
+        public main()
+        {
+            InitializeComponent();
+
+            vanco = new VanCo();
+
+            //di chuyen form game
+            _is_moving = false;
+            this.moving.MouseDown += new MouseEventHandler(moving_MouseDown);
+            this.moving.MouseUp += new MouseEventHandler(moving_MouseUp);
+            this.moving.MouseMove += new MouseEventHandler(moving_MouseMove);
+
+            //di chuyen shape
+            this.MouseMove+=new MouseEventHandler(main_MouseMove);
+            this.shape.MouseClick+=new MouseEventHandler(shape_MouseClick);
+
+            vanco.banco.SetSkin(this.red.Image, this.yellow.Image);
+
+            //ve lai form
+            this.Paint+=new PaintEventHandler(main_Paint);
+
+        }
+        //ve lai form
+        private void main_Paint(object sender, PaintEventArgs e)
+        {
+            Graphics G = this.CreateGraphics();
+            vanco.RePaint(G);
+        }
+
+        //quit caro
+        private void quitgame_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+
+        //di chuyen form game
+        private void moving_MouseDown(object sender, MouseEventArgs e)
+        {
+            _is_moving = true;
+            PointClicked = new Point(e.X, e.Y);
+        }
+        private void moving_MouseUp(object sender, MouseEventArgs e)
+        {
+            _is_moving = false;
+        }
+        private void moving_MouseMove(object sender, MouseEventArgs e)
+        {
+          
+            if (_is_moving == true)
+            {
+                Point N = new Point(this.Location.X + e.X - PointClicked.X, this.Location.Y + e.Y - PointClicked.Y);
+                this.Location = N;
+
+            }
+        }
+
+        //di chuyen shape
+         private void main_MouseMove(object sender, MouseEventArgs e)
+        {
+            shape.Visible = true;
+
+            if (e.X < 90 || e.X > this.Width || e.Y < 30 || e.Y > this.Height)
+                return;
+
+            Point S = vanco.Process_Point(e.X, e.Y);
+
+            S.X = 90 + S.X * 20;
+            S.Y = 30 + S.Y * 20;
+
+            if(this.shape.Location!=S)
+                this.shape.Location = S;
+        }
+        //danh co
+        private void shape_MouseClick(object sender, MouseEventArgs e)
+        {
+            Graphics G = this.CreateGraphics();
+           
+            Point P = vanco.Process_Point(shape.Location.X+e.X,shape.Location.Y+e.Y);
+
+            if(vanco.Push_Chess(G, P.X, P.Y)==true)
+                this.shape.Visible = false;
+
+        }
+
+    }
+}

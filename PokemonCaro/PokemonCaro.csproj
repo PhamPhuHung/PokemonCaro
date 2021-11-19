@@ -1,0 +1,253 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{91C7DF84-9D8A-4335-B8D7-8B1770528E25}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>PokemonCaro</RootNamespace>
+    <AssemblyName>PokemonCaro</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>PokeCaro.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EPPlus, Version=4.5.3.2, Culture=neutral, PublicKeyToken=ea159fdaa78159a1, processorArchitecture=MSIL">
+      <HintPath>..\packages\EPPlus.4.5.3.2\lib\net40\EPPlus.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AlphaBeta.cs" />
+    <Compile Include="ChessBoardManager.cs" />
+    <Compile Include="Constant.cs" />
+    <Compile Include="CreateNewAccount.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CreateNewAccount.Designer.cs">
+      <DependentUpon>CreateNewAccount.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Heuristic.cs" />
+    <Compile Include="LogIn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LogIn.Designer.cs">
+      <DependentUpon>LogIn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainScreen.Designer.cs">
+      <DependentUpon>MainScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Minimax.cs" />
+    <Compile Include="Player.cs" />
+    <Compile Include="PlayGame.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PlayGame.Designer.cs">
+      <DependentUpon>PlayGame.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PlayInfo.cs" />
+    <Compile Include="PokemonCollection.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PokemonCollection.Designer.cs">
+      <DependentUpon>PokemonCollection.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Result.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Result.Designer.cs">
+      <DependentUpon>Result.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SocketManager.cs" />
+    <Compile Include="Theme.cs" />
+    <EmbeddedResource Include="CreateNewAccount.resx">
+      <DependentUpon>CreateNewAccount.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LogIn.resx">
+      <DependentUpon>LogIn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainScreen.resx">
+      <DependentUpon>MainScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PlayGame.resx">
+      <DependentUpon>PlayGame.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PokemonCollection.resx">
+      <DependentUpon>PokemonCollection.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Result.resx">
+      <DependentUpon>Result.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LeftArrow.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RightArrow.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Home.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Doremi.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Doremon.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Nobita.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Fire.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Lizardon.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Pikachu.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\question.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MajinBuu.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Piccolo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Songoku.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ProfileGif.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ProfilePicture.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IchibiShukaku.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\KyuubiKurama.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MoonGoddess.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SunGod.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\UchihaSasuke.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GameMaster.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Fight.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NoSpeaker.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Speaker.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Turn.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BackGround.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="AxWMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="WMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PokemonCaro.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="PokeCaro.ico" />
+    <Content Include="PokemonCaro.ico" />
+    <None Include="Resources\YouLose.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

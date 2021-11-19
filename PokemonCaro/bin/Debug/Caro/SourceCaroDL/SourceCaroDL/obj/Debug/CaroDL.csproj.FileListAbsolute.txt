@@ -1,0 +1,16 @@
+C:\Users\PHAT\Downloads\Compressed\SourceCaroDL\SourceCaroDL\obj\Debug\CaroDL.exe
+C:\Users\PHAT\Downloads\Compressed\SourceCaroDL\SourceCaroDL\obj\Debug\CaroDL.pdb
+C:\Users\PHAT\Downloads\Compressed\SourceCaroDL\SourceCaroDL\bin\Debug\CaroDL.exe.manifest
+C:\Users\PHAT\Downloads\Compressed\SourceCaroDL\SourceCaroDL\bin\Debug\CaroDL.application
+C:\Users\PHAT\Downloads\Compressed\SourceCaroDL\SourceCaroDL\bin\Debug\CaroDL.exe
+C:\Users\PHAT\Downloads\Compressed\SourceCaroDL\SourceCaroDL\bin\Debug\CaroDL.pdb
+C:\Users\PHAT\Downloads\Compressed\SourceCaroDL\SourceCaroDL\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\PHAT\Downloads\Compressed\SourceCaroDL\SourceCaroDL\obj\Debug\CaroDL.Chess.resources
+C:\Users\PHAT\Downloads\Compressed\SourceCaroDL\SourceCaroDL\obj\Debug\CaroDL.main.resources
+C:\Users\PHAT\Downloads\Compressed\SourceCaroDL\SourceCaroDL\obj\Debug\CaroDL.option.resources
+C:\Users\PHAT\Downloads\Compressed\SourceCaroDL\SourceCaroDL\obj\Debug\CaroDL.Properties.Resources.resources
+C:\Users\PHAT\Downloads\Compressed\SourceCaroDL\SourceCaroDL\obj\Debug\CaroDL.StartGame.resources
+C:\Users\PHAT\Downloads\Compressed\SourceCaroDL\SourceCaroDL\obj\Debug\GenerateResource-ResGen.read.1.tlog
+C:\Users\PHAT\Downloads\Compressed\SourceCaroDL\SourceCaroDL\obj\Debug\GenerateResource-ResGen.write.1.tlog
+C:\Users\PHAT\Downloads\Compressed\SourceCaroDL\SourceCaroDL\obj\Debug\CaroDL.exe.manifest
+C:\Users\PHAT\Downloads\Compressed\SourceCaroDL\SourceCaroDL\obj\Debug\CaroDL.application

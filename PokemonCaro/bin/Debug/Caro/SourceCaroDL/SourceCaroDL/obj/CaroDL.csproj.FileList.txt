@@ -1,0 +1,15 @@
+bin\Debug\CaroDL.exe.manifest
+bin\Debug\CaroDL.application
+bin\Debug\CaroDL.exe
+bin\Debug\CaroDL.pdb
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\CaroDL.Chess.resources
+obj\Debug\CaroDL.main.resources
+obj\Debug\CaroDL.option.resources
+obj\Debug\CaroDL.Properties.Resources.resources
+obj\Debug\CaroDL.StartGame.resources
+obj\Debug\CaroDL.csproj.GenerateResource.Cache
+obj\Debug\CaroDL.exe.manifest
+obj\Debug\CaroDL.application
+obj\Debug\CaroDL.exe
+obj\Debug\CaroDL.pdb
